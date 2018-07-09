@@ -1,6 +1,6 @@
-## MajorxTime
+## Major x Time
 ![MajorxTime](MajorxTime.png)
-## MinorxTime
+## Minor x Time
 ![MinorxTime](MinorxTime.png)
-## SpecxTime
+## Spec x Time
 ![SpecxTime](SpecxTime.png)

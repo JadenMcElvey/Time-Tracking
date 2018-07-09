@@ -1,6 +1,6 @@
-## Major x Time
+## Major Group x Time
 ![MajorxTime](MajorxTime.png)
-## Minor x Time
+## Minor Group x Time
 ![MinorxTime](MinorxTime.png)
-## Spec x Time
+## Specification x Time
 ![SpecxTime](SpecxTime.png)

@@ -23,7 +23,7 @@ MajorxTime <- MajorxTime + labs(subtitle = "Assessing Utility and Necesitty")
 MajorxTime <- MajorxTime + labs(x = "Major Group")
 MajorxTime <- MajorxTime + labs(y = "Time(seconds)")
 MajorxTime <- MajorxTime + labs(caption = "by Jaden McElvey")
-MajorxTime <- MajorxTime + scale_y_continuous(labels = comma)
+MajorxTime <- MajorxTime + scale_y_continuous(labels = comma, breaks = c(50000, 100000, 150000, 200000, 250000, 300000))
 # x=Minor y=Time
 MinorxTime <- ggplot(time, aes(Minor))
 MinorxTime <- MinorxTime + geom_bar(aes(weight = Time, fill = Minor))

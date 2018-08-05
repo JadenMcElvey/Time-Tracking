@@ -9,4 +9,4 @@
 ---
 
 #### Notes
-First week including school(Thursday and Friday) but honestly horribly in accurate record keeping.
+First week including school(Thursday and Friday) but honestly horribly inaccurate record keeping.

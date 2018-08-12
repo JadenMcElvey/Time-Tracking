@@ -1,0 +1,52 @@
+# Set working directory to file location using r studio api
+library(rstudioapi)
+dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(dir)
+getwd()
+# Read data
+time <- read.csv("Time.csv", header = TRUE)
+# Prepare to use ggplot2 loading packages and setting theme
+library(ggplot2)
+library(scales)
+library(grid)
+library(RColorBrewer)
+theme_set(theme_minimal(base_size = 14, base_family = "Raleway-Regular"))
+theme_update(plot.subtitle =  element_text(color = "#666666", size = 12))
+theme_update(plot.title =  element_text(family = "Raleway-SemiBold"))
+theme_update(plot.caption =  element_text(color = "#888888", size = 10))
+# Create plots and labels
+# x=Major y=Time
+MajorxTime <- ggplot(time, aes(Major))
+MajorxTime <- MajorxTime + geom_bar(aes(weight = Time, fill = Major))
+MajorxTime <- MajorxTime + labs(title = "Time Spent per Major Group")
+MajorxTime <- MajorxTime + labs(subtitle = "Assessing Utility and Necesitty")
+MajorxTime <- MajorxTime + labs(x = "Major Group")
+MajorxTime <- MajorxTime + labs(y = "Time(seconds)")
+MajorxTime <- MajorxTime + labs(caption = "by Jaden McElvey")
+MajorxTime <- MajorxTime + scale_y_continuous(labels = comma, breaks = c(50000, 100000, 150000, 200000, 250000, 300000))
+# x=Minor y=Time
+MinorxTime <- ggplot(time, aes(Minor))
+MinorxTime <- MinorxTime + geom_bar(aes(weight = Time, fill = Minor))
+MinorxTime <- MinorxTime + labs(title = "Time Spent per Minor Group")
+MinorxTime <- MinorxTime + labs(subtitle = "Understandable General Categories")
+MinorxTime <- MinorxTime + labs(x = "Minor Group")
+MinorxTime <- MinorxTime + labs(y = "Time(seconds)")
+MinorxTime <- MinorxTime + labs(caption = "by Jaden McElvey")
+MinorxTime <- MinorxTime + scale_y_continuous(labels = comma)
+# x=Specific y=Time
+SpecxTime <- ggplot(time, aes(Specific))
+SpecxTime <- SpecxTime + geom_bar(aes(weight = Time, fill = Specific))
+SpecxTime <- SpecxTime + labs(title = "Time Spent per Specific Group")
+SpecxTime <- SpecxTime + labs(subtitle = "")
+SpecxTime <- SpecxTime + labs(x = "Specific Group")
+SpecxTime <- SpecxTime + labs(y = "Time(seconds)")
+SpecxTime <- SpecxTime + labs(caption = "by Jaden McElvey")
+SpecxTime <- SpecxTime + scale_y_continuous(labels = comma)
+# Print plots
+print(MajorxTime)
+print(MinorxTime)
+print(SpecxTime)
+# Save plot
+ggsave("MajorxTime.png", MajorxTime, width = 15, height = 5, dpi = 500)
+ggsave("MinorxTime.png", MinorxTime, width = 15, height = 5, dpi = 500)
+ggsave("SpecxTime.png", SpecxTime, width = 15, height = 5, dpi = 500)

@@ -1,4 +1,4 @@
-# 11 August 2018
+# 18 August 2018
 ## Major Group x Time
 ![MajorxTime](MajorxTime.png)
 ## Minor Group x Time
@@ -9,4 +9,4 @@
 ---
 
 #### Notes
-Surprisingly spent more time on FRC than marching band. Would like to increase time spent on reading and especially college apps.
+Again college apps need more time. Also FRC work load decreassed this week due to nearing completion of the solidworks project.

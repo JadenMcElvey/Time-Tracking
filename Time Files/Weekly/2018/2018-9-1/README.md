@@ -1,4 +1,4 @@
-# 25 August 2018
+# 1 September 2018
 ## Major Group x Time
 ![MajorxTime](MajorxTime.png)
 ## Minor Group x Time

@@ -1,4 +1,4 @@
-# 8 September 2018
+# 15 September 2018
 ## Major Group x Time
 ![MajorxTime](MajorxTime.png)
 ## Minor Group x Time
@@ -9,4 +9,3 @@
 ---
 
 #### Notes
-Shifted two using hours on the y-axis instead of seconds. It's easier to comprehend relative to the week.

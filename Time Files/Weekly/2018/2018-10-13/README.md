@@ -1,4 +1,4 @@
-# 6 October 2018
+# 13 October 2018
 ## Major Group x Time
 ![MajorxTime](MajorxTime.png)
 ## Minor Group x Time
@@ -9,3 +9,4 @@
 ---
 
 #### Notes
+Used senior skip day for FRC and had FRC competition on Saturday(explains increase in FRC and decrease in other places)

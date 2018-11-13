@@ -1,9 +1,9 @@
 Major,Minor,Specific,Time
-NU,School,FRC,24300
-NU,School,Marching Band,37800
-LE,Living,Sleep,203400
-NL,Lazy,Video Media,57600
-NL,Lazy,Nothing,131400
-NU,Recreation,?,3600
-EU,School,School Work,61200
-EU,School,Homework,900
+NU,School,FRC,6.75
+NU,School,Marching Band,10.5
+LE,Living,Sleep,56.5
+NL,Lazy,Video Media,16
+NL,Lazy,Nothing,36.5
+NU,Recreation,?,1
+EU,School,School Work,17
+EU,School,Homework,.25
